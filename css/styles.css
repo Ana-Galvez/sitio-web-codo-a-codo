@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header{
+  background-color: #867070;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 4em;
+  height: 4em;
+}
+
+.logo-img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* nav */
+
+nav{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.lista-items{
+  display: flex;
+}
+
+.item{
+  margin:0 2em;
+  list-style: none;
+}
+
+.item a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* productos */
+
+
+
+/* informacion */
+
+
+
+
+/* footer */
+
+footer{
+  background-color:#867070;
+  height: 8vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
