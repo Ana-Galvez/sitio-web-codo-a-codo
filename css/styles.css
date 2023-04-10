@@ -34,11 +34,20 @@ nav{
 
 .lista-items{
   display: flex;
+  font-family: 'PT Serif', serif;
 }
 
 .item{
-  margin:0 2em;
+  font-size:1.2em;
+  margin:0 4em;
   list-style: none;
+}
+
+/*animación y sombra para la barra de navegación*/
+
+.item:hover{
+  transform: scale(1.2);
+  box-shadow:0 0 1em rgb(66, 190, 214);
 }
 
 .item a{
