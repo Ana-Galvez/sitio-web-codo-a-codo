@@ -69,9 +69,15 @@ nav{
 
 footer{
   background-color:#867070;
-  height: 8vh;
+  height: 20vh;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+}
+/* agregado copyright y desarrollado por*/
+#copyright-desarrollado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
