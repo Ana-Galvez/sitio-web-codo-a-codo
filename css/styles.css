@@ -68,16 +68,26 @@ nav{
 /* footer */
 
 footer{
+  display: flex;
   background-color:#867070;
   height: 20vh;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: 'PT Serif', serif;
+
+}
+/* agregado #datos-pagos-redes*/
+/* agregado #datos*/
+#datos a{
+  text-decoration: none;
+  color: white;
 }
 /* agregado copyright y desarrollado por*/
 #copyright-desarrollado{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
