@@ -7,8 +7,10 @@
 
 /* header */
 header{
+  position:fixed;
   background-color: #867070;
   height: 8vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +37,7 @@ nav{
 
 .lista-items{
   display: flex;
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .item{
@@ -71,12 +73,14 @@ nav{
 footer{
   display: flex;
   background-color:#867070;
-  height: 20vh;
+  height: auto;
+  padding-top:1em;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  font-family: 'PT Serif', serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 /* agregado #datos-pagos-redes*/
@@ -89,9 +93,9 @@ footer{
   
 }
 /* agregado #datos*/
-#datos, #pagos, #contacto, #redes{
+/* #datos, #pagos, #contacto, #redes{
   border:1px solid red;
-}
+} */
 
 #datos a{
   text-decoration: none;
@@ -100,6 +104,7 @@ footer{
 }
 #datos li{
   list-style: none;
+  padding:0.3em;
 }
 #pagos{
   width: 18%;
@@ -108,16 +113,26 @@ footer{
 #contacto{
   display:flex;
   flex-direction: column;
-  width: 25%;
-
+}
+#contacto p{
+  color:white;
+}
+#contacto a{
+  text-decoration: none;
+  color: #120a79;
+}
+/*para que el texto quede bien al lado de cada icono*/
+#contacto img{
+  float: left;
 }
 
 /* agregado copyright y desarrollado por*/
 #copyright-desarrollado{
-  display: flex;
+  padding-top: 1em;
+  display:flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
   width: 100%;
+  color:white;
+  margin:0 0.5em;
 }
