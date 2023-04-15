@@ -1,3 +1,4 @@
+/* raiz*/
 *{
   padding: 0;
   margin: 0;
@@ -6,8 +7,10 @@
 
 /* header */
 header{
+  position:fixed;
   background-color: #867070;
   height: 8vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,11 +37,20 @@ nav{
 
 .lista-items{
   display: flex;
+  font-family: 'Roboto', sans-serif;
 }
 
 .item{
-  margin:0 2em;
+  font-size:1.2em;
+  margin:0 4em;
   list-style: none;
+}
+
+/*animación y sombra para la barra de navegación*/
+
+.item:hover{
+  transform: scale(1.2);
+  box-shadow:0 0 1em rgb(66, 190, 214);
 }
 
 .item a{
@@ -59,10 +71,68 @@ nav{
 /* footer */
 
 footer{
+  display: flex;
   background-color:#867070;
-  height: 8vh;
+  height: auto;
+  padding-top:1em;
+  flex-wrap: wrap;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: 'Roboto', sans-serif;
+
+}
+/* agregado #datos-pagos-redes*/
+#datos-pagos-redes{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  width: 100%;
+  height: 100%;
+  
+}
+/* agregado #datos*/
+/* #datos, #pagos, #contacto, #redes{
+  border:1px solid red;
+} */
+
+#datos a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+#datos li{
+  list-style: none;
+  padding:0.3em;
+}
+#pagos{
+  width: 18%;
+}
+
+#contacto{
+  display:flex;
+  flex-direction: column;
+}
+#contacto p{
+  color:white;
+}
+#contacto a{
+  text-decoration: none;
+  color: #120a79;
+}
+/*para que el texto quede bien al lado de cada icono*/
+#contacto img{
+  float: left;
+}
+
+/* agregado copyright y desarrollado por*/
+#copyright-desarrollado{
+  padding-top: 1em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color:white;
+  margin:0 0.5em;
 }
